@@ -1,0 +1,55 @@
+/*ul-tree*/
+ul.ul-treefree {
+    padding-left: 25px;
+}
+
+ul.ul-treefree ul {
+    margin: 0;
+    padding-left: 6px;
+}
+
+ul.ul-treefree li {
+    position: relative;
+    list-style: none outside none;
+    border-left: solid 1px #999;
+    margin: 0;
+    padding: 0 0 0 19px;
+    line-height: 23px;
+}
+
+ul.ul-treefree li:before {
+    content: '';
+    display: block;
+    border-bottom: solid 1px #999;
+    position: absolute;
+    width: 18px;
+    height: 11px;
+    left: 0;
+    top: 0;
+}
+
+ul.ul-treefree li:last-child {
+    border-left: 0 none;
+}
+
+ul.ul-treefree li:last-child:before {
+    border-left: solid 1px #999;
+}
+
+/* ul-dropfree */
+ul.ul-dropfree div.drop {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    z-index: 10;
+    top: 6px;
+    left: -6px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAALCAIAAAD0nuopAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNpinDlzJgNlgAWI09LScEnPmjWLoAImrHpIAkwMFAMqGMGC6X44GzkIsHoQooAFTTVQKdbAwxOigyMsmIh3MC7ASHnqBAgwAD4CGeOiDhXRAAAAAElFTkSuQmCC');
+    background-position: -11px 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.tree {
+    padding: 15px 5px;
+}
